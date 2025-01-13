@@ -15,7 +15,7 @@ body {
 }
 
 
-/* Header with Animated Title */
+/* Header with Title */
 .header {
     display: flex;
     justify-content: space-between;
@@ -301,7 +301,6 @@ br {
 .effect .tw:hover { color: #fff; } /* Twitter */
 .effect .git:hover { color: #fff; } /* Github */
 .effect .discord:hover { color: #fff; } /* Discord*/
-/* .effect .vimeo:hover { color: #fff; } Vimeo */
 .effect .pinterest:hover { color: #fff; } /* Pinterest */
 .effect .insta:hover { color: #fff; } /* Instagram */
 .effect .in:hover { color: #fff; } /* LinkedIn */
@@ -312,3 +311,23 @@ body {
 a, button, .clickable-element {
     cursor: url('images\\arr1-32.png'), pointer;
 }
+
+/* Breadcrumbs */
+.breadcrumbs {
+    font-size: 1.1em;
+    color: #84b067;
+  }
+  
+  .breadcrumbs a {
+    color: #84b067;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumbs span {
+    color: #fff;
+  }
