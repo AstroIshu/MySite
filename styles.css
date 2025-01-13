@@ -1,0 +1,314 @@
+/* General Styles */
+body {
+    background-image: url('https://images.pexels.com/photos/15474721/pexels-photo-15474721/free-photo-of-stars-in-the-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Path to your image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fix the background while scrolling */
+    font-family: 'Ubuntu Mono', serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #252525;
+    color: #fff;
+    margin: 2;
+    padding: 2;
+}
+
+
+/* Header with Animated Title */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.header .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #84b067;
+}
+
+/* Navigation Hover Animation */
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: #fff;
+    font-size: 1.3em;
+    text-decoration: underline;
+    text-decoration-color: #84b067;
+    /* underline */
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1.8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #84b067;
+    transform: scale(1.2);
+}
+
+/* Description */
+.description {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+.description a {
+    color: #84b067;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+#scroll-container {
+    border: 2px solid #84b067; /* Match the accent color */
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 60px; /* Adjust height as needed */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: flex-start; /* Start text from the right */
+    background-color: #1e1e1e; /* Darker background for contrast */
+    position: relative;
+}
+
+marquee {
+    font-size: 1.2em; /* Increase font size for better readability */
+    color: #84b067; /* Match the accent color */
+    padding-left: 100%; /* Ensure text scrolls fully */
+    display: inline-block;
+    /* animation: scroll-text 50s linear infinite; */
+    white-space: nowrap;
+    line-height: 60px; /* Match container height for vertical centering */
+}
+
+
+/* Subheadings and Paragraphs */
+.content-section {
+    margin: 20px 0;
+}
+
+.subheading {
+    color: #84b067;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-size: 1.05em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+br {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+/* ASCII Art */
+.ascii-art {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-family: monospace;
+    color: #aaa;
+    white-space: pre;
+    text-align: center;
+}
+
+.ascii-art pre:hover {
+    color: #84b067;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    color: #fff;
+}
+
+.footer a {
+    color: #84b067;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.highlight {
+    background-color: #ffeb3b;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 10px;
+    background-color: #84b067;
+    color: #000;
+    border: 1 px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 4px;
+}
+
+#back-to-top:hover {
+    background-color: #252525;
+}
+
+
+/* Loader Styles */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 1.6s ease-out;
+}
+
+.letter-i {
+    width: 80vh;
+    height: 80vh;
+}
+
+.cls-1 {
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    stroke-dasharray: 1500;
+    animation: lines 2s infinite;
+    animation-delay: calc(var(--item) * 1s);
+}
+
+.dot {
+    stroke-dasharray: 500;
+    stroke: var(--color);
+}
+
+.stem {
+    stroke: var(--color);
+}
+
+@keyframes lines {
+    100% {
+        stroke-dashoffset: 3000;
+    }
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.container.loaded {
+    opacity: 1;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+/* Description Styles */
+#scroll-container {
+    overflow: hidden;
+    height: 3em;
+}
+
+/* Social Media Buttons Styles */
+.effect {
+    width: 100%;
+    padding: 50px 0px 70px 0px;
+    background-color: transparent; /* Adjusted to match your theme */
+    display: flex;
+    justify-content: center;
+}
+
+.effect.lavinia {
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.effect .buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.effect a {
+    text-decoration: none !important;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 25px;
+    overflow: hidden;
+    position: relative;
+    color: #84b067; /* Match your accent color */
+    border: 2px dashed #84b067; /* Match your accent color */
+    transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+}
+
+.effect a:hover {
+    border-color: rgba(132, 176, 103, 0); /* Match your accent color */
+}
+
+.effect a:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: -2px;
+    left: -2px;
+    border: 2px dashed #84b067; /* Match your accent color */
+    position: absolute;
+    border-radius: 70%;
+}
+
+/* Icon colors for specific platforms */
+.effect .email:hover { color: #fff; } /* Facebook */
+.effect .tw:hover { color: #fff; } /* Twitter */
+.effect .git:hover { color: #fff; } /* Github */
+.effect .discord:hover { color: #fff; } /* Discord*/
+/* .effect .vimeo:hover { color: #fff; } Vimeo */
+.effect .pinterest:hover { color: #fff; } /* Pinterest */
+.effect .insta:hover { color: #fff; } /* Instagram */
+.effect .in:hover { color: #fff; } /* LinkedIn */
+
+body {
+    cursor: url('images\\arr2-32.png'), default;
+}
+a, button, .clickable-element {
+    cursor: url('images\\arr1-32.png'), pointer;
+}
