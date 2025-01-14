@@ -1,10 +1,15 @@
 /* General Styles */
 body {
-    background-image: url('https://images.pexels.com/photos/15474721/pexels-photo-15474721/free-photo-of-stars-in-the-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Path to your image */
-    background-size: cover; /* Cover the entire page */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-attachment: fixed; /* Fix the background while scrolling */
+    background-image: url('https://images.pexels.com/photos/15474721/pexels-photo-15474721/free-photo-of-stars-in-the-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    /* Path to your image */
+    background-size: cover;
+    /* Cover the entire page */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-attachment: fixed;
+    /* Fix the background while scrolling */
     font-family: 'Ubuntu Mono', serif;
     font-weight: 400;
     font-style: normal;
@@ -70,26 +75,35 @@ body {
 }
 
 #scroll-container {
-    border: 2px solid #84b067; /* Match the accent color */
+    border: 2px solid #84b067;
+    /* Match the accent color */
     border-radius: 5px;
     overflow: hidden;
     white-space: nowrap;
-    height: 60px; /* Adjust height as needed */
+    height: 60px;
+    /* Adjust height as needed */
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: flex-start; /* Start text from the right */
-    background-color: #1e1e1e; /* Darker background for contrast */
+    align-items: center;
+    /* Center vertically */
+    justify-content: flex-start;
+    /* Start text from the right */
+    background-color: #1e1e1e;
+    /* Darker background for contrast */
     position: relative;
 }
 
 marquee {
-    font-size: 1.2em; /* Increase font size for better readability */
-    color: #84b067; /* Match the accent color */
-    padding-left: 100%; /* Ensure text scrolls fully */
+    font-size: 1.2em;
+    /* Increase font size for better readability */
+    color: #84b067;
+    /* Match the accent color */
+    padding-left: 100%;
+    /* Ensure text scrolls fully */
     display: inline-block;
     /* animation: scroll-text 50s linear infinite; */
     white-space: nowrap;
-    line-height: 60px; /* Match container height for vertical centering */
+    line-height: 60px;
+    /* Match container height for vertical centering */
 }
 
 
@@ -111,8 +125,8 @@ marquee {
 }
 
 br {
-    display: block; 
-    margin-bottom: 10px; 
+    display: block;
+    margin-bottom: 10px;
 }
 
 /* ASCII Art */
@@ -147,6 +161,7 @@ br {
 .footer a:hover {
     text-decoration: underline;
 }
+
 .highlight {
     background-color: #ffeb3b;
     padding: 2px 5px;
@@ -250,18 +265,21 @@ br {
 .effect {
     width: 100%;
     padding: 50px 0px 70px 0px;
-    background-color: transparent; /* Adjusted to match your theme */
+    background-color: transparent;
+    /* Adjusted to match your theme */
     display: flex;
     justify-content: center;
 }
 
 .effect.lavinia {
-    margin-top: 20px; /* Adjust spacing as needed */
+    margin-top: 20px;
+    /* Adjust spacing as needed */
 }
 
 .effect .buttons {
     display: flex;
-    gap: 20px; /* Space between buttons */
+    gap: 20px;
+    /* Space between buttons */
 }
 
 .effect a {
@@ -275,13 +293,16 @@ br {
     font-size: 25px;
     overflow: hidden;
     position: relative;
-    color: #84b067; /* Match your accent color */
-    border: 2px dashed #84b067; /* Match your accent color */
+    color: #84b067;
+    /* Match your accent color */
+    border: 2px dashed #84b067;
+    /* Match your accent color */
     transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
 }
 
 .effect a:hover {
-    border-color: rgba(132, 176, 103, 0); /* Match your accent color */
+    border-color: rgba(132, 176, 103, 0);
+    /* Match your accent color */
 }
 
 .effect a:after {
@@ -291,24 +312,56 @@ br {
     height: 100%;
     top: -2px;
     left: -2px;
-    border: 2px dashed #84b067; /* Match your accent color */
+    border: 2px dashed #84b067;
+    /* Match your accent color */
     position: absolute;
     border-radius: 70%;
 }
 
 /* Icon colors for specific platforms */
-.effect .email:hover { color: #fff; } /* Facebook */
-.effect .tw:hover { color: #fff; } /* Twitter */
-.effect .git:hover { color: #fff; } /* Github */
-.effect .discord:hover { color: #fff; } /* Discord*/
-.effect .pinterest:hover { color: #fff; } /* Pinterest */
-.effect .insta:hover { color: #fff; } /* Instagram */
-.effect .in:hover { color: #fff; } /* LinkedIn */
+.effect .email:hover {
+    color: #fff;
+}
+
+/* Facebook */
+.effect .tw:hover {
+    color: #fff;
+}
+
+/* Twitter */
+.effect .git:hover {
+    color: #fff;
+}
+
+/* Github */
+.effect .discord:hover {
+    color: #fff;
+}
+
+/* Discord*/
+.effect .pinterest:hover {
+    color: #fff;
+}
+
+/* Pinterest */
+.effect .insta:hover {
+    color: #fff;
+}
+
+/* Instagram */
+.effect .in:hover {
+    color: #fff;
+}
+
+/* LinkedIn */
 
 body {
     cursor: url('images\\arr2-32.png'), default;
 }
-a, button, .clickable-element {
+
+a,
+button,
+.clickable-element {
     cursor: url('images\\arr1-32.png'), pointer;
 }
 
@@ -316,18 +369,126 @@ a, button, .clickable-element {
 .breadcrumbs {
     font-size: 1.1em;
     color: #84b067;
-  }
-  
-  .breadcrumbs a {
+}
+
+.breadcrumbs a {
     color: #84b067;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-  }
-  
-  .breadcrumbs a:hover {
+}
+
+.breadcrumbs a:hover {
     text-decoration: underline;
-  }
-  
-  .breadcrumbs span {
+}
+
+.breadcrumbs span {
     color: #fff;
-  }
+}
+
+/* Bento Grid Styles */
+.bento-grid {
+    padding: 16px;
+    /* Padding around the grid */
+}
+
+.flex {
+    display: flex;
+    gap: 16px;
+    /* Equal spacing between columns */
+}
+
+.flex-1 {
+    flex: 1;
+    /* Each column takes equal width */
+}
+
+.bento-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    /* Rounded corners */
+    border: 2px solid rgba(148, 163, 184, 0.1);
+    /* Subtle border */
+    background-color: #1e1e1e;
+    /* Dark background */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 16px;
+    /* Spacing between items */
+}
+
+.bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure images cover the grid cell */
+    transition: transform 0.3s ease-in-out;
+}
+
+.bento-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Height Classes */
+.bento-item.h-16 {
+    height: 64px;
+    /* 16 * 4px */
+}
+
+.bento-item.h-24 {
+    height: 96px;
+    /* 24 * 4px */
+}
+
+.bento-item.h-32 {
+    height: 128px;
+    /* 32 * 4px */
+}
+
+.bento-item.h-40 {
+    height: 160px;
+    /* 40 * 4px */
+}
+
+.bento-item.h-56 {
+    height: 224px;
+    /* 56 * 4px */
+}
+
+.bento-item.h-64 {
+    height: 256px;
+    /* 64 * 4px */
+}
+
+/* Poetry Sections */
+.bento-item.poetry {
+    padding: 20px;
+    background-color: #2b2b2b;
+    border: 2px dashed #84b067;
+    text-align: left;
+}
+
+.bento-item.poetry h2 {
+    color: #84b067;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.bento-item.poetry p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        /* Stack columns vertically on smaller screens */
+    }
+
+    .bento-item {
+        margin-bottom: 16px;
+        /* Spacing between items */
+    }
+}
