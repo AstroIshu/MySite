@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookBook - AstroIshu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+IE+Guides&family=Playwrite+NG+Modern:wght@100..400&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" href="images\20240202_175606.jpg">
+</head>
+
+
+<body>
+    <!-- Loader with SVG Animation -->
+    <div class="loader">
+        <svg class="letter-i" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+            <!-- SVG Paths Here -->
+        </svg>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Header with Breadcrumbs -->
+        <div class="header">
+            <div class="title">Ishu</div>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <span>Kitchen</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>
+                Welcome to my Kitchen
+                <small>Choose any cookbook...</small>
+            </h1>
+
+            <!-- Notebooks -->
+            <a href="html" class="moleskine-wrapper">
+                <div class="moleskine-notebook">
+                    <div class="notebook-cover blue">
+                        <div class="notebook-skin">Projects</div>
+                    </div>
+                    <div class="notebook-page ruled"></div>
+                </div>
+                <h4>Dive into my projects, where I bring ideas to life through code, design, and creativity. From machine learning models to web development, this is where innovation happens.</h4>
+            </a>
+
+            <a href="html" class="moleskine-wrapper">
+                <div class="moleskine-notebook">
+                    <div class="notebook-cover yellow">
+                        <div class="notebook-skin">Learning</div>
+                    </div>
+                    <div class="notebook-page squared"></div>
+                </div>
+                <h4>Explore my learning journey, where I document my progress, challenges, and breakthroughs in tech, AI, and beyond. Learning never stops!</h4>
+            </a>
+
+            <a href="blog.html" class="moleskine-wrapper">
+                <div class="moleskine-notebook">
+                    <div class="notebook-cover green">
+                        <div class="notebook-skin">Blogs</div>
+                    </div>
+                    <div class="notebook-page dotted"></div>
+                </div>
+                <h4>Read my thoughts, experiences, and reflections on life, tech, and everything in between. A space for ideas, stories, and inspiration.</h4>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 AstroIshu | it is what it is. </p>
+        </footer>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">↑</button>
+
+    <!-- Hidden Button for Music -->
+    <button id="hidden-button" style="display: none;"></button>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="audio/background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

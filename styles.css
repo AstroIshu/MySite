@@ -367,8 +367,9 @@ button,
 
 /* Breadcrumbs */
 .breadcrumbs {
-    font-size: 1.1em;
-    color: #84b067;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .breadcrumbs a {
@@ -379,6 +380,10 @@ button,
 
 .breadcrumbs a:hover {
     text-decoration: underline;
+    text-decoration-color: #84b067;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1.8px;
+    transition: all 0.3s ease-in-out;
 }
 
 .breadcrumbs span {
@@ -481,7 +486,8 @@ button,
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 768px)
+{
     .flex {
         flex-direction: column;
         /* Stack columns vertically on smaller screens */
@@ -490,5 +496,275 @@ button,
     .bento-item {
         margin-bottom: 16px;
         /* Spacing between items */
+    }
+}
+
+
+/* ---------------------------------------------------------- */
+/* Blog Grid Styles */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between grid items */
+    margin-top: 30px;
+}
+
+.blog-post {
+    background-color: #fff; /* White background */
+    border: 2px solid rgba(148, 163, 184, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: #000; /* Black text */
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-post:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #000; /* Black heading by default */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.blog-post:hover h2 {
+    color: #84b067; /* Signature green on hover */
+}
+
+.blog-post h3 {
+    font-size: 1.2em;
+    color: #666; /* Subheading color */
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.blog-post:hover h3 {
+    color: #444; /* Slightly darker gray on hover */
+}
+
+.blog-post .meta {
+    font-size: 0.9em;
+    color: #888; /* Meta text color */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.blog-post:hover .meta {
+    color: #666; /* Slightly darker gray on hover */
+}
+
+/* ---------------------------------------------------- */
+/* CookBook Page Styles */
+.main-content {
+    margin: 5em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Ubuntu Mono', monospace; /* Match your font */
+}
+
+.main-content h1 {
+    width: 100%;
+    margin: 0 auto 1.5em;
+    font-size: 2.7em;
+    color: #84b067; /* Signature green */
+    /* font-weight: bold; Match your heading style */
+}
+
+.main-content h1 small {
+    text-transform: none;
+    display: block;
+    margin: 20px 0;
+    font: 0 1em 'Ubuntu Mono', monospace; /* Match your font */
+    color: #999; /* Light gray */
+}
+
+/* Notebook Styles */
+.moleskine-wrapper {
+    max-width: calc(100% / 4);
+    min-width: 10em;
+    text-decoration: none;
+    color: inherit;
+    margin: 20px;
+}
+
+.moleskine-notebook {
+    height: 250px;
+    width: 175px;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    border-radius: 5px 15px 15px 5px;
+    transform-origin: left center 0px;
+    display: inline-block;
+    perspective: 800px;
+}
+
+.moleskine-notebook:hover {
+    transform: rotateZ(-10deg);
+}
+
+.moleskine-notebook:hover .notebook-cover {
+    transform: rotateY(-50deg);
+    z-index: 999;
+    box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.notebook-cover {
+    background: #cc4b48;
+    height: 250px;
+    width: 175px;
+    position: absolute;
+    border-radius: 5px 15px 15px 5px;
+    z-index: 10;
+    transition: 0.5s linear;
+    transform-style: preserve-3d;
+    transform-origin: left center 0px;
+}
+
+.notebook-cover:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: calc(100% + 2px);
+    top: -1px;
+    z-index: 100;
+    border-radius: 2px;
+    right: 25px;
+    transition: 2s ease;
+    background: linear-gradient(
+        to right,
+        #a83a37 0%,
+        #cc4b48 12%,
+        #a83a37 25%,
+        #cc4b48 37%,
+        #a83a37 50%,
+        #cc4b48 62%,
+        #a83a37 75%,
+        #cc4b48 87%,
+        #a83a37 100%
+    );
+}
+
+.notebook-cover.blue {
+    background: #2e95aa;
+}
+
+.notebook-cover.blue:before {
+    background: linear-gradient(
+        to right,
+        #1e7a8a 0%,
+        #2e95aa 12%,
+        #1e7a8a 25%,
+        #2e95aa 37%,
+        #1e7a8a 50%,
+        #2e95aa 62%,
+        #1e7a8a 75%,
+        #2e95aa 87%,
+        #1e7a8a 100%
+    );
+}
+
+.notebook-cover.green {
+    background: #abc3b5;
+}
+
+.notebook-cover.green:before {
+    background: linear-gradient(
+        to right,
+        #8ba797 0%,
+        #abc3b5 12%,
+        #8ba797 25%,
+        #abc3b5 37%,
+        #8ba797 50%,
+        #abc3b5 62%,
+        #8ba797 75%,
+        #abc3b5 87%,
+        #8ba797 100%
+    );
+}
+
+.notebook-cover.yellow {
+    background: #fed754;
+}
+
+.notebook-cover.yellow:before {
+    background: linear-gradient(
+        to right,
+        #e6c44b 0%,
+        #fed754 12%,
+        #e6c44b 25%,
+        #fed754 37%,
+        #e6c44b 50%,
+        #fed754 62%,
+        #e6c44b 75%,
+        #fed754 87%,
+        #e6c44b 100%
+    );
+}
+
+.notebook-skin {
+    height: 50px;
+    background: #e8e8e0;
+    margin-top: 80px;
+    padding: 15px;
+    font-size: 25px;
+    position: relative;
+    z-index: 10;
+    color: #222;
+    text-align: left;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-family: 'Ubuntu Mono', monospace; /* Match your font */
+}
+
+.notebook-skin:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    left: 0;
+    bottom: 0;
+    background: #cddc39;
+}
+
+.notebook-page {
+    height: 100%;
+    width: 175px;
+    position: absolute;
+    background-color: #fbfae8;
+    z-index: 0;
+    border-radius: 5px 16px 16px 5px;
+    overflow: hidden;
+}
+
+.notebook-page.ruled {
+    background: linear-gradient(to bottom, #fbfae8 9px, #e4e4e4 1px);
+    background-size: 100% 10px;
+}
+
+.notebook-page.squared {
+    background-image: linear-gradient(#e4e4e4 1px, transparent 1px), linear-gradient(90deg, #e4e4e4 1px, transparent 1px);
+    background-size: 10px 10px, 10px 10px, 2px 2px, 2px 2px;
+}
+
+.notebook-page.dotted {
+    background: linear-gradient(90deg, #fbfae8 10px, transparent 1%) center, linear-gradient(#fbfae8 10px, transparent 1%) center, #999;
+    background-size: 11px 11px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .moleskine-wrapper {
+        max-width: 100%; /* Full width on smaller screens */
+        margin: 10px 0;
+    }
+
+    .moleskine-notebook {
+        width: 100%; /* Full width on smaller screens */
     }
 }
