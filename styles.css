@@ -768,3 +768,128 @@ button,
         width: 100%; /* Full width on smaller screens */
     }
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Container adjustments */
+    .container {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    /* Header adjustments */
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .header .title {
+        font-size: 2em;
+    }
+
+    /* Navigation adjustments */
+    .nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav a {
+        font-size: 1.1em;
+    }
+
+    /* Description text adjustments */
+    .description {
+        font-size: 0.9em;
+    }
+
+    #scroll-container {
+        height: 50px;
+    }
+
+    marquee {
+        font-size: 1em;
+        line-height: 50px;
+    }
+
+    /* Content section adjustments */
+    .content-section {
+        margin: 15px 0;
+    }
+
+    .subheading {
+        font-size: 1.5em;
+    }
+
+    .paragraph {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    /* ASCII art optimization */
+    .ascii-art {
+        display: none; /* Hide on mobile */
+    }
+
+    /* Show a simplified version for mobile */
+    .ascii-art::after {
+        content: "ASTROISHU";
+        display: block;
+        font-family: monospace;
+        font-size: 1.5em;
+        color: #84b067;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* Social media buttons adjustment */
+    .effect .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .effect a {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    /* Back to top button adjustment */
+    #back-to-top {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 8px;
+        font-size: 1em;
+    }
+
+    /* Background image optimization */
+    body {
+        background-image: url('https://images.pexels.com/photos/15474721/pexels-photo-15474721/free-photo-of-stars-in-the-sky.jpeg?auto=compress&cs=tinysrgb&w=640');
+        /* Using a smaller image for mobile */
+    }
+
+    /* Loader adjustment */
+    .letter-i {
+        width: 60vh;
+        height: 60vh;
+    }
+}
+
+/* Additional optimization for very small screens */
+@media screen and (max-width: 480px) {
+    .header .title {
+        font-size: 1.8em;
+    }
+
+    .nav a {
+        font-size: 1em;
+    }
+
+    .effect a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
